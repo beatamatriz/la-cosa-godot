@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2l3rwfxa3wye"]
+
+[ext_resource type="Texture2D" uid="uid://bcwqaqbl4kjw4" path="res://assets/silencioanonimodqvdm.jpg" id="1_uq5qo"]
+[ext_resource type="PackedScene" uid="uid://ctmhcdejjni14" path="res://scenes/player.tscn" id="2_8lqxx"]
+[ext_resource type="PackedScene" uid="uid://mxkcjhauqagy" path="res://scenes/tabaco.tscn" id="3_wm822"]
+
+[node name="world" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_uq5qo")
+
+[node name="Player" parent="." instance=ExtResource("2_8lqxx")]
+position = Vector2(555, 545)
+speed = 300.0
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_wm822")]
+position = Vector2(1258, 937)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_wm822")]
+position = Vector2(1004, 719)

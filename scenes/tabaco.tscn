@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://mxkcjhauqagy"]
+
+[ext_resource type="Texture2D" uid="uid://dsw1v8ns3qpbh" path="res://assets/sadasd.png" id="1_djt7x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3ldn"]
+size = Vector2(168, 40)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 0)
+scale = Vector2(0.110739, 0.1)
+texture = ExtResource("1_djt7x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 0)
+shape = SubResource("RectangleShape2D_u3ldn")
+metadata/_edit_lock_ = true
